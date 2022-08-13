@@ -1,0 +1,60 @@
+structure - stores multiple types of values
+
+Syntax:
+
+struct <Name of structure>
+{
+    int i;
+    float j;
+    char c;
+};
+
+eg:
+
+Here `student` is datatype
+
+struct student{
+    int Roll_No;
+    char name[50];
+    float cgpa;
+
+}
+void main(){
+    /**
+    `s[100]` is array of structures which is similar to simple array
+    */
+
+    struct student s[100];
+    `now we can access it using "." operator`
+
+    s.Roll_No = 101;
+    s.name = ;
+    `and so on`
+}
+
+
+
+/* Nested structures */
+
+// Approach-1
+
+struct structure1
+{
+    ...
+};
+
+struct structure2
+{
+    ...
+    struct structure1 s1;
+};
+
+
+// Approach-2
+struct structure2{
+    ....
+    struct structure1
+    {
+        // This is inner structure
+    } s1; //We have defined after creating it, this is implicit way
+}
